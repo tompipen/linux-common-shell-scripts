@@ -12,7 +12,7 @@ wget https://github.com/tompipen/linux-common-shell-scripts/archive/master.zip
 
 unzip master.zip
 
-cd linux-common-shell-scripts
+cd linux-common-shell-scripts-master
 
 bash init-new-dev-eniv.sh
 
