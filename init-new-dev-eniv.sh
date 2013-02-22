@@ -6,8 +6,8 @@ sh generate-ssh.sh
 sh git-config.sh
 sh install-nodejs.sh
 \curl -L https://get.rvm.io | bash -s stable --ruby
-echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-source ~/.rvm/scripts/rvm
+echo "gem: --no-ri --no-rdoc" > $HOME/.gemrc
+source $HOME/.rvm/scripts/rvm
 gem update --system
 gem update
 rvmsudo gem install sqlite3
