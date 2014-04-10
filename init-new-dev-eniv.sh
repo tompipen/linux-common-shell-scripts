@@ -11,6 +11,7 @@ cd ruby-2.1.1
 ./configure
 make
 sudo make install
+cd ..
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 source ~/.rvm/scripts/rvm
