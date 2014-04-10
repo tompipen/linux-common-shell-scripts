@@ -5,6 +5,12 @@ sudo apt-get -y install build-essential bison openssl libreadline6 libreadline6-
 bash generate-ssh.sh
 bash git-config.sh
 bash install-nodejs.sh
+wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.1.tar.gz
+tar -xzvf ruby-2.1.1.tar.gz
+cd ruby-2.1.1
+./configure
+make
+sudo make install
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 source ~/.rvm/scripts/rvm
