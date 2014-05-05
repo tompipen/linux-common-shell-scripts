@@ -68,12 +68,12 @@ passenger-install-apache2-module
 # create app
 read -p "App name : " app_name
 sudo adduser $app_name
-sudo passwd $app_name
 sudo su $app_name
 
 # rvm with ruby
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
+gem install passenger
 
 # create App directory
 cd ~
